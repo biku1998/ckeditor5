@@ -45,11 +45,13 @@ import Subscript from '@ckeditor/ckeditor5-basic-styles/src/subscript';
 import Superscript from '@ckeditor/ckeditor5-basic-styles/src/superscript';
 import TodoList from '@ckeditor/ckeditor5-list/src/todolist';
 import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
+import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
 ClassicEditor.builtinPlugins = [
+	CloudServices,
 	SimpleUploadAdapter,
 	TodoList,
 	Subscript,
@@ -130,6 +132,9 @@ ClassicEditor.defaultConfig = {
 			'findAndReplace',
 			'|',
 		],
+	},
+	simpleUpload: {
+		// feature configuration
 	},
 	image: {
 		toolbar: [
