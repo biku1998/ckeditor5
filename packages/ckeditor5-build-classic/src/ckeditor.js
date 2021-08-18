@@ -61,7 +61,6 @@ ClassicEditor.builtinPlugins = [
 	HorizontalLine,
 	Highlight,
 	FontSize,
-	FontFamily,
 	FontColor,
 	FontBackgroundColor,
 	FindAndReplace,
@@ -104,7 +103,6 @@ ClassicEditor.defaultConfig = {
 			'heading',
 			'|',
 			'fontSize',
-			'fontFamily',
 			'fontColor',
 			'fontBackgroundColor',
 			'highlight',
@@ -136,6 +134,9 @@ ClassicEditor.defaultConfig = {
 		],
 	},
 	simpleUpload: {
+		// feature configuration
+	},
+	mediaEmbed: {
 		// feature configuration
 	},
 	image: {
